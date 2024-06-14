@@ -1,0 +1,243 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://github.com/quyvx07}{\Large Vũ Xuân Quý}} & Email : \href{mailto:vuxuanquy07@gmail.com}{vuxuanquy07@gmail.com}\\
+  \href{https://github.com/quyvx07}{https://github.com/quyvx07} & Mobile : \href{tel:+84388985972}{+84-388-985-972} \\
+  {} & DoB: {24/07/1995} \\
+\end{tabular*}
+
+
+%-----------PROFESSIONAL SUMMARY-----------------
+\section{PROFESSIONAL SUMMARY}
+  {
+    - Have 4 years of experience as a FullStack Developer. \\
+    - Backend (BE): Proficiency in Laravel, Nodejs for building robust and efficient server-side applications. \\
+    - Frontend (FE): Proficiency in Reactjs, React Native, and Vuejs for developing engaging and responsive user interfaces. \\
+    - Have experience in making e-commerce website, PWA, Service Worker, Cache API, Web App Manifest  \\
+    - Build static html css based on figma (\href{https://github.com/quyvx07/html-static-build}{LINK}) \\
+    - Excellent troubleshooting and communication skills. \\
+  }
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {RikkeiSoft}{Ha Noi, VN}
+      {Software Engineer}{5/2019 - Present}
+      \resumeItemListStart
+        \resumeItem{Team leader}
+          {\\
+            -	Provide solutions to the requirements from customers. Clear requirement \\
+            -	Develop functions, Fix bugs \\
+            -	Planning, esimate task \\
+            -	Support member, review code \\
+            -	Manage the progress of the task \\
+          }
+        \resumeItem{Development}
+          {\\
+            -	Clear requirement \\
+            -	Develop functions, Fix bugs \\
+          }
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{E-commerce}
+      {\\
+        - \textbf{Project description:}
+          Collaborated on the maintenance and development of various E-commerce websites, as well as the creation of new websites based on customer requirements.
+          Implemented features and functionality to enhance the user experience and streamline online shopping processes.
+            \\
+        - \textbf{Client:} Korea \\
+        - \textbf{Team size:} 4 \\
+        - \textbf{Responsibilities:} Development \\
+        - \textbf{Programming Language:} Python, Javascript \\
+        - \textbf{Framework:} Nestjs, Nextjs \\
+        - \textbf{Platform, server and database:} Postgresql, MongoDB, Graphql \\
+      }
+    \resumeSubItem{Eging App}
+      {\\
+        - \textbf{Project description:}
+            Synthesize and analyzing data available to project area, date, time have many ink.
+            Create a monthly cron job to get data from another database. Data analysis provides a method of statistical prediction of squid population
+            Use vue to display the analyzed data\\
+        - \textbf{Client:} Japan \\
+        - \textbf{Team size:} 2 \\
+        - \textbf{Responsibilities:} Team leader \\
+        - \textbf{Programming Language:} PHP, Javascript \\
+        - \textbf{Framework:} Laravel, Reactjs \\
+        - \textbf{Platform, server and database:} Mysql \\
+      }
+    \resumeSubItem{ManagementProject}
+      {\\
+        - \textbf{Project description:}
+            Developing and maintaining an application that allows users to create customized tools according to their needs,
+            with a focus on safety and diversity of features.
+            The application is widely used by large companies and is built on a platform similar to low-code.\\
+        - \textbf{Client:} Japan\\
+        - \textbf{Team size:} 30 \\
+        - \textbf{Responsibilities:} Team leader \\
+        - \textbf{Programming Language:} Java, Javascript \\
+        - \textbf{Framework:} Spring Core, Ractive, Nodejs \\
+        - \textbf{Platform, server and database:} Linux, MongoDB \\
+      }
+    \resumeSubItem{CVG}
+      {\\
+        - \textbf{Project description:}
+            I worked on a large-scale web application project for a Vietnamese company that involved multiple provinces.
+            To accommodate the scale of the project, we used a microservices architecture.
+            Each website was distributed to its corresponding province, and there was also a central website.
+            The complexity arose from synchronizing and transferring data between stores in different provinces.\\
+        - \textbf{Client:} Viet Nam\\
+        - \textbf{Team size:} 30 \\
+        - \textbf{Responsibilities:} Team leader \\
+        - \textbf{Programming Language:} PHP, Java, Javascript \\
+        - \textbf{Framework:} Laravel, Vuejs, Spring \\
+        - \textbf{Platform, server and database:} Linux, Mysql \\
+      }
+    \resumeSubItem{Car Rental}
+      {\\
+        - \textbf{Project description:}
+            Car rental management and tenants. Car rental registration function through 3 steps: Register information, Car rental with price, car pictures
+            \\
+        - \textbf{Client:} Japan \\
+        - \textbf{Team size:} 20 \\
+        - \textbf{Responsibilities:} Development \\
+        - \textbf{Programming Language:} PHP, Javascript \\
+        - \textbf{Framework:} Laravel, Reactjs, ReactNative \\
+        - \textbf{Platform, server and database:} Mysql \\
+      }
+    \resumeSubItem{Food Delivery}
+      {\\
+        - \textbf{Project description:}
+          Shopping cart and delivery on google.
+          Build the application interface, use google map integrated into the application,
+          handle the shopping cart part (\href{https://github.com/quyvx07/ShopDemoReactNative}{LINK})
+          \\
+        - \textbf{Client:} VietNam \\
+        - \textbf{Team size:} 4 \\
+        - \textbf{Responsibilities:} Development \\
+        - \textbf{Programming Language:} PHP, Javascript \\
+        - \textbf{Framework:} Laravel, ReactNative \\
+        - \textbf{Platform, server and database:} Mysql \\
+      }
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+% \section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Codegym Viet Nam}{Ha Noi, VN}
+      {CGC-Bootcamp PHP}{1/2019 -- 5/2019}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

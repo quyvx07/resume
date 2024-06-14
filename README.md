@@ -14,12 +14,15 @@ Get started quickly using [Overleaf](https://www.overleaf.com/latex/templates/so
 
 ```sh
 docker build -t latex .
-docker run --rm -i -v "$PWD":/data latex pdflatex sourabh_bajaj_resume.tex
+docker run --rm -i -v "$PWD":/data latex pdflatex vu_xuan_quy.tex
+or
+docker run --rm -i -v "D:\cv_clone\resume:/data" latex pdflatex vu_xuan_quy.tex
 ```
 
 ### Preview
 
-![Resume Screenshot](/resume_preview.png)
+![Resume Screenshot](/resume_preview1.png)
+![Resume Screenshot](/resume_preview2.png)
 
 ### License
 
