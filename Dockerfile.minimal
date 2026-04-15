@@ -1,0 +1,7 @@
+FROM alpine:3.19
+
+RUN apk add --no-cache texlive texmf-dist-latexextra \
+    && rm -rf /var/cache/apk/*
+
+WORKDIR /data
+VOLUME ["/data"]

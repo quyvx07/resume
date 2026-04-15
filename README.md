@@ -12,11 +12,16 @@ Get started quickly using [Overleaf](https://www.overleaf.com/latex/templates/so
 
 ### Build using Docker
 
+Build image (chỉ cần chạy 1 lần):
+
 ```sh
-docker build -t latex .
-docker run --rm -i -v "$PWD":/data latex pdflatex vu_xuan_quy.tex
-or
-docker run --rm -i -v "D:\cv_clone\resume:/data" latex pdflatex vu_xuan_quy.tex
+docker build -f Dockerfile.minimal -t latex-minimal .
+```
+
+Convert .tex to .pdf:
+
+```sh
+docker run --rm -v "$PWD":/data -w /data latex-minimal pdflatex vu_xuan_quy.tex
 ```
 
 ### Preview
